@@ -1,0 +1,11 @@
+/** Sass-Ready media queries Here there are some presets of useful media queries breakpoints for various devices Usage: @media variable-name { } and it will compile to: @media screen width and height { }  */
+/* Desktops and laptops ----------- */
+@media only screen and (min-width: 768px) { .single-product div.product .summary { width: 100% !important; float: none !important; } }
+@media only screen and (max-width: 768px) { body.woocommerce-checkout .checkout.woocommerce-checkout { display: flex; flex-direction: column; }
+  body.woocommerce-checkout .checkout.woocommerce-checkout .mfb-checkout-main-heading { order: 2; }
+  body.woocommerce-checkout .checkout.woocommerce-checkout .back-to-start { order: 0; }
+  body.woocommerce-checkout .checkout.woocommerce-checkout #customer_details { order: 3; width: 100%; }
+  body.woocommerce-checkout .checkout.woocommerce-checkout #order_review { order: 1; width: 100%; }
+  body.woocommerce-checkout .checkout.woocommerce-checkout #order_review_heading { width: 100%; } }
+
+/*# sourceMappingURL=admin-style.css.map */

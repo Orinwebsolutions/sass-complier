@@ -1,0 +1,28 @@
+{
+  "name": "sass-complier",
+  "version": "1.0.0",
+  "description": "sass complier",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-main-watch": "node-sass --watch assets/src/scss/main/styles.scss -o css --output-style expanded",
+    "scss-main-dev": "node-sass assets/src/scss/main/styles.scss -o css --output-style expanded",
+    "scss-main-prod": "node-sass assets/src/scss/main/styles.scss -o css --output-style compact",
+    "scss-main-prodminify": "node-sass assets/src/scss/main/styles.scss -o css --output-style compressed",
+    "scss-admin-watch": "node-sass --watch assets/src/scss/main/admin-style.scss -o css --output-style expanded",
+    "scss-admin-dev": "node-sass assets/src/scss/main/admin-style.scss -o css --output-style expanded",
+    "scss-admin-prod": "node-sass assets/src/scss/main/admin-style.scss -o css --output-style compact",
+    "scss-admin-prodminify": "node-sass assets/src/scss/main/admin-style.scss -o css --output-style compressed",
+    "js-minify": "uglifyjs assets/src/js/scripts.js --compress --mangle --output js/scripts.min.js",
+    "js-admin-minify": "uglifyjs assets/src/js/scripts.js --compress --mangle --output js/scripts.min.js"
+  },
+  "keywords": [
+    "sass"
+  ],
+  "author": "amilapriyankara16@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.14.1",
+    "uglify-js": "^3.10.0"
+  }
+}

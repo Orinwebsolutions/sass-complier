@@ -1,0 +1,7 @@
+.mfb-qty-selector .mfb-increment { padding: 5px; display: inline-block; line-height: 10px; opacity: 0.75; }
+.mfb-qty-selector .mfb-increment img { width: 20px; height: 20px; }
+.mfb-qty-selector .mfb-increment:focus { outline: 0; }
+.mfb-qty-selector .mfb-increment:hover { opacity: 1; }
+.mfb-qty-selector .mfb-qty { color: #333333; font-size: 16px; display: inline-block; vertical-align: top; width: 20px; }
+
+/*# sourceMappingURL=qty-selector.css.map */

@@ -1,0 +1,18 @@
+.overlay { position: fixed; top: 0; bottom: 0; left: 0; right: 0; background: rgba(0, 0, 0, 0.7); transition: opacity 500ms; z-index: 10000; visibility: hidden; opacity: 0; }
+
+.overlay.show { visibility: visible; opacity: 1; }
+
+.popup { margin: 0 auto; background: #fff; border-radius: 5px; width: 60%; max-width: 750px; position: relative; transform: translateY(-50%); top: 50%; }
+.popup .popup-heading { font-weight: 600; text-align: center; margin: 15px 0 25px 0; line-height: 1.2em; }
+.popup .popup-sub-heading { text-align: center; margin: 0 0 25px 0; font-size: 1.0rem; font-weight: 600; }
+.popup .content { max-height: 70vh; padding: 20px; overflow-y: auto; overflow-x: hidden; position: relative; /*transition: all .2s ease-in-out;*/ }
+.popup .content::-webkit-scrollbar-track { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); /*border-radius: 10px;*/ background-color: #F5F5F5; }
+.popup .content::-webkit-scrollbar { width: 8px; background-color: #F5F5F5; }
+.popup .content::-webkit-scrollbar-thumb { -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3); background-color: #ccc; }
+.popup .close { position: absolute; top: -5px; right: 0; transition: all 200ms; font-size: 30px; line-height: 15px; font-weight: bold; text-decoration: none; color: #333; padding: 20px; z-index: 9; }
+.popup .close:hover { color: #009DB1; }
+.popup .close:focus { outline: 0; }
+
+@media screen and (max-width: 767px) { .popup { width: 96%; } }
+
+/*# sourceMappingURL=modal.css.map */
