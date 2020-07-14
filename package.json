@@ -13,7 +13,7 @@
     "scss-admin-dev": "node-sass assets/src/scss/main/admin-style.scss -o css --source-map css --output-style expanded",
     "scss-admin-prod": "node-sass assets/src/scss/main/admin-style.scss -o css --output-style compact",
     "scss-admin-prodminify": "node-sass assets/src/scss/main/admin-style.scss -o css --output-style compressed",
-    "js-minify": "uglifyjs assets/src/js/scripts.js --compress --mangle --output js/scripts.min.js",
+    "js-minify": "uglifyjs assets/src/js/scripts.js --compress --mangle --output js/scripts.min.js --source-map names",
     "js-admin-minify": "uglifyjs assets/src/js/admin-script.js --compress --mangle --output js/admin-script.min.js"
   },
   "keywords": [
